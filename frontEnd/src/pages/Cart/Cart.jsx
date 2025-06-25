@@ -64,7 +64,7 @@ const Cart = () => {
                             alert("please login");
                             return;
                         }
-                        if(getTotalCartAmount === 0){
+                        if(getTotalCartAmount() === 0){
                             alert("cart is empty,add items to cart");
                             return;
                         }
