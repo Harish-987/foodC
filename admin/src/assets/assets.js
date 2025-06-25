@@ -16,4 +16,4 @@ export const assets ={
     foodc_small
 }
 
-export const url = 'http://localhost:4000'
+export const url = 'https://foodc.onrender.com'
