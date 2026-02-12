@@ -24,13 +24,13 @@ const MyOrders = () => {
       <h2>My Orders</h2>
       <div className="container">
         {
-          data.map((order,index) => {
+          data?.map((order,index) => {
             return (
               <div key={index} className='my-orders-order'>
                 <img src={assets.parcel_icon} alt="" />
                 <p>
                   {
-                    order.items.map((item) => `${item.name} x ${item.quantity}`).join(', ')
+                    order.items?.map((item) => `${item.name} x ${item.quantity}`).join(', ')
                   }
                 </p>
                 <p>${order.amount}.00</p>
