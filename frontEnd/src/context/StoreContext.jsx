@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
 
     const fetchFoodList = async () => {
         const response = await axios.get(url+"/api/food/list");
-        setFoodList(response.data.data);
+        setFoodList(response.data?.data || []);
     }
     useEffect(() => {
         async function  loadData() {
